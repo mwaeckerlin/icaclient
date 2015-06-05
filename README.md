@@ -3,10 +3,10 @@
 Citrix icaclient is a terribly bad designed an terribly bad
 implemented tool for remote desktop connections. It is a 32-bit
 Firefox plugin, even on 64-bit Linux systems, so it corrupts your
-operating system, or at least your firefoy installation. Even then,
-most of the time, it does not work.  Still I have to use it on
-work. So I want to run it in a well defined environment: Encapsulate
-in a docker container.
+operating system, or at least your Firefox installation. Even then, it
+need fixes and most of the time, it does not work.  Still I have to
+use it on work. So I want to run it in a well defined environment:
+Encapsulate in a docker container.
 
 ## Build the container
 
@@ -35,7 +35,7 @@ Since it is an X11 GUI software, usage is in two steps:
   1. Run a background container as server (only required once).
      with `--restart=always` the container persists after reboots
 
-        docker run -d --restart=always --name icaclient icaclient
+        docker run -d --restart=always --name icaclient mwaeckerlin/icaclient
   2. Connect to the server using `ssh -X` (as many times you want). 
      logging in with `ssh` automatically opens a firefox window
 

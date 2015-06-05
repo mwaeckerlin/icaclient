@@ -6,7 +6,7 @@ FROM ubuntu:latest
 MAINTAINER Marc Wäckerlin
 
 WORKDIR /tmp/install
-ADD icaclient_*_amd64.deb icaclient.deb
+ADD icaclient_*.deb icaclient.deb
 RUN dpkg --add-architecture i386
 RUN apt-get -y update
 RUN apt-get -y install firefox openssh-server
