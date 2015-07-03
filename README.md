@@ -33,9 +33,8 @@ As usual:
 
 Since it is an X11 GUI software, usage is in two steps:
   1. Run a background container as server (only required once).
-     with `--restart=always` the container persists after reboots
 
-        docker run -d --restart=always --name icaclient mwaeckerlin/icaclient
+        docker run -d --name icaclient mwaeckerlin/icaclient
   2. Connect to the server using `ssh -X` (as many times you want). 
      logging in with `ssh` automatically opens a firefox window
 
