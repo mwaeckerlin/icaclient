@@ -1,6 +1,6 @@
 # Start with:
 # docker run -d --restart=always --name icaclient icaclient
-# ssh -X browser@$(docker inspect icaclient | sed -n 's/ *"IPAddress": "\(.*\)",/\1/p')
+# ssh -X browser@$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' icaclient)
 # then open about:addons in firefox and set ica-client to "allways activate"
 FROM ubuntu:latest
 MAINTAINER Marc Wäckerlin

@@ -22,7 +22,7 @@ container.
 
 Otherwise, you could also  download the client from:
 
-https://www.citrix.de/downloads/citrix-receiver/linux/receiver-for-linux-131.html
+https://www.citrix.de/downloads/citrix-receiver/linux/receiver-for-linux-13-2.html
 
 ### Build Command
 
@@ -38,7 +38,7 @@ Since it is an X11 GUI software, usage is in two steps:
   2. Connect to the server using `ssh -X` (as many times you want). 
      logging in with `ssh` automatically opens a firefox window
 
-        ssh -X browser@$(docker inspect icaclient | sed -n 's/ *"IPAddress": "\(.*\)",/\1/p')
+        ssh -X browser@$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' icaclient)
   3. Configure firefox (only the first time you created a container):
       1. Open about:addons in the URL bar
       2. Set ica-client to `allways activate`
