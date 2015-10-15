@@ -22,7 +22,7 @@ container.
 
 Otherwise, you could also  download the client from:
 
-https://www.citrix.de/downloads/citrix-receiver/linux/receiver-for-linux-13-2.html
+https://www.citrix.de/downloads/citrix-receiver/linux/receiver-for-linux-1321.html
 
 ### Build Command
 
