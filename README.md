@@ -36,7 +36,7 @@ Since it is an X11 GUI software, usage is in two steps:
 
         docker run -d --name icaclient mwaeckerlin/icaclient
   2. Connect to the server using `ssh -X` (as many times you want). 
-     logging in with `ssh` automatically opens a firefox window
+     Logging in with `ssh` automatically opens a firefox window
 
         ssh -X browser@$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' icaclient)
   3. Configure firefox (only the first time you created a container):
