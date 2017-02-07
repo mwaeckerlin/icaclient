@@ -1,5 +1,12 @@
 # Citrix ICA-Client
 
+> **Note:** This project is not continued, since my employer switched to
+> VMware Horizon. I still accept pull requests. If you need a more up to
+> date version, either update yourself and send me a pull request, or
+> look at the forks, or see [Marvin's](https://github.com/MarvAmBass)
+> [different client](https://github.com/DesktopContainers/icaclient),
+> which he will continue to support.
+
 Citrix icaclient is a terribly bad designed an terribly bad
 implemented tool for remote desktop connections. It is a 32-bit
 Firefox plugin, even on 64-bit Linux systems, so it corrupts your
