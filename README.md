@@ -19,7 +19,7 @@ Encapsulate in a docker container.
 
 ### ICA-Client and License
 
-I the `CITRIX LICENSE AGREEMENT` stored in file `LICENSE`, there is no
+In the `CITRIX LICENSE AGREEMENT` stored in file `LICENSE`, there is no
 prohibition of distribution of the icaclient. So i suppose, I am
 allowed to distribute it, als long as you follow the license
 restrictions, i.e. you only use it for the Citrix products it is
